@@ -1,15 +1,15 @@
-Testing to run Phaser js with brython
-=====================================
+Run Phaser js with Brython
+==========================
 
 Implemntation of first phaser tutorial with ``brython``
 
-Load Phaser::
+Load ``Phaser`` and ``brython`` submodule::
 
     git submodule init
 
     git submodule update
 
-to start a webserver, just run::
+Start a webserver::
 
     python -m SimpleHTTPServer   
 
