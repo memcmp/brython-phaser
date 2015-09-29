@@ -67,8 +67,13 @@ class Game(object):
             star.body.gravity.y = 6
             star.body.bounce.y = 0.7 + random.random() * 0.2
 
+        self.score = 0
+        self.scoreText = window.game.add.text(16, 16, 'score: 0')
+
     def collectStar(self, player, star):
         self.stars.remove(star)
+        self.score += 10
+        self.scoreText.setText('score: {}'.format(self.score))
 
     def update(self):
         window.game.physics.arcade.collide(self.player, self.platforms)

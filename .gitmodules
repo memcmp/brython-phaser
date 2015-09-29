@@ -1,3 +1,6 @@
 [submodule "phaser"]
 	path = phaser
 	url = git@github.com:photonstorm/phaser.git
+[submodule "brython"]
+	path = brython
+	url = git@github.com:brython-dev/brython.git
